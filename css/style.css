@@ -1,0 +1,75 @@
+body, html {
+height: 100%;
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+#main {
+height: 80%;
+display: -webkit-flex;
+display: flex;
+flex-flow: row;
+/* 
+Dins aquest apartat hi especificat amb "height" que el "div" amb id "main" 
+tengui una altura mínima de un 80% en relació a tota la pàgina, ja que el nav 
+i el header ocupen el restant 20%. També, amb el "display" hi especificat 
+com vull que es col·loquen els diferents objectes dins aquest "div" posant "flex"
+i "webkit-flex" per a que siga compatible amb navegadors que fan servir webkit.
+Per últim amb "flex-flow: row" especific que vull que es col·loquin en linea
+horitzontal, un objecte al costat del altre
+*/
+}
+#main aside {
+display: -webkit-flex;
+display: flex;
+flex-grow: 1;
+background: #CCF;
+/*
+Amb el "background" especifico de quin color vull que sigui el fons.
+Display i flex-grow explicats a l'apartat "main"
+*/
+}
+#separador {
+min-width: 66%; 
+/*
+Amb "min-width" especifico l'amplada mínima que vull que tengui l'objecte.
+*/
+}
+#separador article {
+background: #CFC;
+min-height: 87.5%;
+/*
+Amb "min-height" especifico l'altura mínima que vull que tengui l'objecte.
+"background" explicat a l'apartat "#main aside"
+*/
+}
+#separador footer{
+display: block;
+min-height: 12.5%;
+background: #FC6;
+/*
+Display explicat a l'apartat "#main"
+Min-height explicat a l'apartat "#separador article"
+Background explicat a l'apartat "#main aside"
+*/
+}
+header {
+display: block;
+min-height: 10%;
+background: #FC6;
+/*
+Display explicat a l'apartat "#main"
+Min-height explicat a l'apartat "#separador article"
+Background explicat a l'apartat "#main aside"
+*/
+}
+nav {
+display: block;
+min-height:10%;
+background: #888;
+/*
+Display explicat a l'apartat "#main"
+Min-height explicat a l'apartat "#separador article"
+Background explicat a l'apartat "#main aside"
+*/
+}
